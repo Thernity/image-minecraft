@@ -8,8 +8,7 @@ ENV MINECRAFT_JAR="https://launcher.mojang.com/v1/objects/a16d67e5807f57fc4e5502
 
 # Install wget and certificates
 RUN     apk update \
-    &&  apk add ca-certificates wget bash \
-    &&  update-ca-certificates
+    &&  apt install wget -y
 
 # Download the server jar file
 RUN     mkdir -p /opt/minecraft \
