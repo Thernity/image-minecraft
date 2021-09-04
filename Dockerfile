@@ -1,6 +1,6 @@
 # Minecraft Server image
 
-FROM openjdk:8-jre-alpine
+FROM openjdk:18-jre-alpine
 
 
 ENV MINECRAFT_VERSION=1.17.1
