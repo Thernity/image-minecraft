@@ -20,6 +20,7 @@ VOLUME /data
 EXPOSE 25565
 
 ADD ./minecraft.sh /opt
+ADD server.properties /opt
 RUN chmod a+x /opt/minecraft.sh
 
 CMD /opt/minecraft.sh
